@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+function check_number_of_args() {
+  if [ $# != params ]
+  then echo -e "Error!\nMust be $params parameters"
+  exit 1
+  fi
+}
+
+function check_args() {
+  check_number_of_args $params
+}
+
