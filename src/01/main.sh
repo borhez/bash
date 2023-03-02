@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
-. ./check_args
+. ./check_functions
 
-params=6
-check_args $params
+n_inParams=$#
+must_n=6
+check_args $n_inParams must_n
 echo end!
